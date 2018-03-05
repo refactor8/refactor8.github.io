@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="/assets/js/Chart.min.js"></script>
+    <script src="/assets/js/uikit.min.js"></script>
+    <script src="/assets/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <article>
+      <div class="uk-container uk-container-large">
+        <div uk-grid>
+          <div class="uk-width-1-3@m sidebar">
+            {% include sidebar.html %}
+          </div>
+          <div class="uk-width-1-2@m uk-margin-small">
+            {% include profile.html %}
+            {% include experience.html %}
+            {% include skills.html %}
+            {% include education.html %}
+        </div>
+      </div>
+    </article>
+    {% include footer.html %}
+
+    <script>
+      var ctx = document.getElementById('frontend-chart')
+      var ctxBackend = document.getElementById('backend-chart')
+      var ctxDevOps = document.getElementById('devOps-chart')
+
+      var backend = {
+        labels: [
+          'Ruby on Rails',
+          'Node.js',
+          'Java',
+          'Python'
+        ],
+        datasets: [
+          {
+            backgroundColor: [
+              '#635380',
+              '#2E294E',
+              '#90708C',
+              '#ACE4AA',
+              '#E1CDB5'],
+            data: [
+              98,
+              70,
+              70,
+              50
+            ]
+          }
+        ]
+      }
+
+      var devOps = {
+        labels: [
+          'Docker',
+          'Kubernetes',
+          'Ubuntu',
+          'CentOS',
+          'Chef'
+        ],
+        datasets: [
+          {
+            backgroundColor: [
+              '#635380',
+              '#5DA9E9',
+              '#003F91',
+              '#323031',
+              '#2E294E'],
+            data: [
+              90,
+              70,
+              90,
+              60,
+              50
+            ]
+          }
+        ]
+      }
+
+      var frontend = {
+        labels: [
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'Vue.js',
+          'React'
+        ],
+        datasets: [
+          {
+            backgroundColor: [
+              '#5BC0BE',
+              '#2E294E',
+              '#6FFFE9',
+              '#141B41',
+              '#306BAC'],
+            data: [
+              98,
+              95,
+              90,
+              98,
+              70
+            ]
+          }
+        ]
+      }
+
+      var frontendOpts = {
+        title: {
+          display: true,
+          text: 'Frontend expertise level'
+        },
+        responsive: true,
+        maintainAspectRatio: true,
+        legend: { display: false }
+      }
+
+      var backendOpts = {
+        title: {
+          display: true,
+          text: 'Backend expertise level'
+        },
+        responsive: true,
+        maintainAspectRatio: true,
+        legend: { display: false }
+      }
+
+      var devOpsOpts = {
+        title: {
+          display: true,
+          text: 'DevOps expertise level'
+        },
+        responsive: true,
+        maintainAspectRatio: true,
+        legend: { display: false }
+      }
+
+      var frontendChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: frontend,
+        options: frontendOpts
+      })
+
+      var backendChart = new Chart(ctxBackend, {
+        type: 'doughnut',
+        data: backend,
+        options: backendOpts
+      })
+
+      var devOpsChart = new Chart(ctxDevOps, {
+        type: 'doughnut',
+        data: devOps,
+        options: devOpsOpts
+      })
+
+    </script>
+  </body>
+</html>

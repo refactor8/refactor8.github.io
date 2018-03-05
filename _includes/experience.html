@@ -1,0 +1,19 @@
+<div class="uk-section uk-section-default uk-margin-remove-top">
+  <h3 class="uk-heading-divider">Experience</h3>
+  <div class="timeline">
+    {% assign job_experience = (site.jobs | sort: 'from') | reverse %}
+
+    {% for job in job_experience %}
+    <div class="timeline-container timeline-left">
+      <div class="timeline-content">
+        <h4 class="uk-h4 timeline-date uk-margin-remove">{{ job.from }} &ndash; {{ job.to }}</h4>
+        <div class="timeline-role">
+          <a class="uk-link-text" href="{{job.url}}">{{ job.title }}</a>
+        </div>
+        <div class="timeline-company">{{ job.company }}</div>
+        <div class="timeline-location">{{ job.location }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

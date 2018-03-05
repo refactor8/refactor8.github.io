@@ -1,0 +1,21 @@
+---
+layout: page
+---
+<article class="uk-margin-bottom">
+  <div class="uk-container uk-container-large">
+    <div class="uk-margin-large-top">
+      <ul class="uk-breadcrumb">
+        <li><a href="/">Job Experience</a></li>
+        <li><a href="{{page.company}}">{{page.company}}</a></li>
+      </ul>
+      <h3 class="uk-heading-divider uk-margin-small-top">{{page.title}} at {{page.company}}</h3>
+      <div class="uk-margin-small-top">
+        <ul class="uk-list-large">
+        {% for accomplishment in page.accomplishments %}
+           <li class="accomplishment">{{accomplishment.description}}</li>
+        {% endfor %}
+        <ul>
+      </div>
+    </div>
+  </div>
+</article>
