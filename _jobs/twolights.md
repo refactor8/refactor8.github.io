@@ -17,4 +17,5 @@ accomplishments:
   - description: "Followed Agile Methodology with 2 week sprint cycles."
   - description: "Tested all the API's and functionality utilizing TDD principles like rspec, factorygirl, ffaker."
   - description: "Continuously integrated features/fixes in a fast-paced and self-managed work environment."
+  - description: "Created tools using Rake to automate the creation of new customer sites."
 ---

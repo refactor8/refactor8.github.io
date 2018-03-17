@@ -228,6 +228,10 @@ p {
 
 .profile {
   color: #333 !important;
+  word-wrap: normal;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 95%;
 }
 
 .skills {
