@@ -240,13 +240,14 @@ p {
   line-height: 20px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
   color: white; /* White text color */
   font-weight: lighter !important;
-  font-family: 'proxima_nova_scosfthin';
+  font-family: 'proxima_nova_altregular';
 }
 
 .skill-title {
   margin: 10px 0 0 0;
   color: #333;
   font-size: 16px !important;
+  font-weight: bold;
 }
 
 .html {
