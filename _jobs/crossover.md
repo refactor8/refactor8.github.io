@@ -13,4 +13,7 @@ accomplishments:
   - description: "Reduced test suite run time significantly by introducing zeus and parallel_test gem"
   - description: "Set up internal continuous integration server with Jenkins CI"
   - description: "Developed a rich UI with HTML5, Vue.js, Bootstrap, and Sass."
+  - description: "Managed projects with agile methodologies in JIRA via user stories and customer issues."
+  - description: "Designed and implemented database architecture for applications using various databases (MongoDB, MySQL, and Postgres)."
+  - description: "Continuously integrated features/fixes in fast-paced and self-managed work environment."
 ---

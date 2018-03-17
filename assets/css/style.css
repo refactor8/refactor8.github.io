@@ -324,3 +324,7 @@ p {
 .sidebar {
   background-color: #FFFEFF;
 }
+
+.uk-breadcrumb > * > * {
+  font-size: 16px !important;
+}
