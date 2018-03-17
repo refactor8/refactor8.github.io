@@ -1,7 +1,7 @@
 ---
 layout: job
 title: "Ruby on Rails Developer"
-company: "Crossover (Remote)"
+company: "Crossover for Work"
 from: "11/2016"
 to: "Present"
 location: "Austin, United States"

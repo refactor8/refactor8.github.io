@@ -1,7 +1,7 @@
 ---
 layout: job
 title: "Ruby on Rails Developer"
-company: "Twolights Studio (Remote)"
+company: "Twolights Studio"
 from: "09/2012"
 to: "09/2016"
 location: "London, United Kingdom"
