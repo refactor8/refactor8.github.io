@@ -1,7 +1,7 @@
 ---
 layout: job
 title: "C# NET Developer"
-company: "Informatica El Corte Ingles"
+company: "IECISA"
 from: "09/2008"
 to: "09/2012"
 location: "Santiago de Compostela, Spain"
