@@ -280,7 +280,7 @@ p {
 }
 
 .node {
-  width: 60%;
+  width: 80%;
   background: linear-gradient(to right, #52b78866, #52B788);
 }
 
@@ -295,7 +295,7 @@ p {
 }
 
 .mongodb {
-  width: 60%;
+  width: 80%;
   background: linear-gradient(to right, #52b78866, #52B788);
 }
 
@@ -310,7 +310,7 @@ p {
 }
 
 .react {
-  width: 50%;
+  width: 80%;
   background: linear-gradient(to right, #52b78866, #52B788);
 }
 
