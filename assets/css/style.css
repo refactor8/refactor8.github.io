@@ -252,6 +252,12 @@ p {
   font-family: 'proxima_nova_altregular';
 }
 
+.uk-accordion-title {
+  font-family: 'proxima_nova_altregular';
+  font-weight: lighter !important;
+  font-size: 18px !important;
+}
+
 .skill-title {
   margin: 10px 0 0 0;
   color: #333;
