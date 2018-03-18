@@ -13,12 +13,12 @@
   </head>
   <body>
     <article>
-      <div class="uk-container">
+      <div class="uk-container uk-container-large">
         <div uk-grid>
           <div class="uk-width-1-3@m sidebar">
             {% include sidebar.html %}
           </div>
-          <div class="uk-width-1-2@m">
+          <div class="uk-width-1-2@m uk-margin-top uk-align-center content">
             {% include profile.html %}
             {% include experience.html %}
             {% include skills.html %}
@@ -116,32 +116,32 @@
 
       var frontendOpts = {
         title: {
-          display: true,
+          display: false,
           text: 'Frontend expertise level'
         },
         responsive: true,
         maintainAspectRatio: true,
-        legend: { display: false }
+        legend: { display: true }
       }
 
       var backendOpts = {
         title: {
-          display: true,
+          display: false,
           text: 'Backend expertise level'
         },
         responsive: true,
         maintainAspectRatio: true,
-        legend: { display: false }
+        legend: { display: true }
       }
 
       var devOpsOpts = {
         title: {
-          display: true,
+          display: false,
           text: 'DevOps expertise level'
         },
         responsive: true,
         maintainAspectRatio: true,
-        legend: { display: false }
+        legend: { display: true }
       }
 
       var frontendChart = new Chart(ctx, {

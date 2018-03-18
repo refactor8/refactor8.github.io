@@ -1,57 +1,84 @@
 <div class="uk-section uk-section-small uk-margin-right">
   <h3 class="uk-heading-divider">Skills</h3>
-  <p class="skill-title">Ruby on Rails</p>
-  <div class="container">
-    <div class="skills rails">98%</div>
-  </div>
 
-  <p class="skill-title">HTML</p>
-  <div class="container">
-    <div class="skills html">98%</div>
-  </div>
+  <ul uk-accordion>
+    <li>
+      <a class="uk-accordion-title" href="#">Active Skills</a>
+      <div class="uk-accordion-content">
+        <p class="skill-title">Ruby on Rails</p>
+        <div class="container">
+          <div class="skills rails">98%</div>
+        </div>
 
-  <p class="skill-title">CSS</p>
-  <div class="container">
-    <div class="skills css">95%</div>
-  </div>
+        <p class="skill-title">HTML</p>
+        <div class="container">
+          <div class="skills html">98%</div>
+        </div>
 
-  <p class="skill-title">JavaScript</p>
-  <div class="container">
-    <div class="skills js">95%</div>
-  </div>
+        <p class="skill-title">CSS</p>
+        <div class="container">
+          <div class="skills css">95%</div>
+        </div>
 
-  <p class="skill-title">Node</p>
-  <div class="container">
-    <div class="skills node">60%</div>
-  </div>
+        <p class="skill-title">JavaScript</p>
+        <div class="container">
+          <div class="skills js">95%</div>
+        </div>
 
-  <p class="skill-title">Postgres</p>
-  <div class="container">
-    <div class="skills postgres">90%</div>
-  </div>
+        <p class="skill-title">Node</p>
+        <div class="container">
+          <div class="skills node">60%</div>
+        </div>
 
-  <p class="skill-title">MySQL</p>
-  <div class="container">
-    <div class="skills mysql">85%</div>
-  </div>
+        <p class="skill-title">Postgres</p>
+        <div class="container">
+          <div class="skills postgres">90%</div>
+        </div>
 
-  <p class="skill-title">MongoDB</p>
-  <div class="container">
-    <div class="skills mongodb">60%</div>
-  </div>
+        <p class="skill-title">MySQL</p>
+        <div class="container">
+          <div class="skills mysql">85%</div>
+        </div>
 
-  <p class="skill-title">RSpec</p>
-  <div class="container">
-    <div class="skills rspec">90%</div>
-  </div>
+        <p class="skill-title">MongoDB</p>
+        <div class="container">
+          <div class="skills mongodb">60%</div>
+        </div>
 
-  <p class="skill-title">Vue.js</p>
-  <div class="container">
-    <div class="skills vue">90%</div>
-  </div>
+        <p class="skill-title">RSpec</p>
+        <div class="container">
+          <div class="skills rspec">90%</div>
+        </div>
 
-  <p class="skill-title">React</p>
-  <div class="container">
-    <div class="skills react">50%</div>
-  </div>
+        <p class="skill-title">Vue.js</p>
+        <div class="container">
+          <div class="skills vue">90%</div>
+        </div>
+
+        <p class="skill-title">React</p>
+        <div class="container">
+          <div class="skills react">50%</div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a class="uk-accordion-title" href="#">Frontend</a>
+      <div class="uk-accordion-content">
+        {% include frontend.html %}
+      </div>
+    </li>
+    <li>
+      <a class="uk-accordion-title" href="#">Backend</a>
+      <div class="uk-accordion-content">
+        {% include backend.html %}
+      </div>
+    </li>
+    <li>
+      <a class="uk-accordion-title" href="#">DevOps</a>
+      <div class="uk-accordion-content">
+        {% include devops.html %}
+      </div>
+    </li>
+  </ul>
+
 </div>
