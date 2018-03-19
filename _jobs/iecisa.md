@@ -7,6 +7,7 @@ to: "09/2012"
 location: "Santiago de Compostela, Spain"
 
 accomplishments:
+  - description: "Implemented a custom Java connector to exchange data between an in-house CMS product and Microsoft Sharepoint."
   - description: "Applied programming enhancements to current web based solution, both front end and back end."
   - description: "Used ASP.NET, C#, AJAX, and Microsoft Visual Studio 2005/2008 for development."
   - description: "Troubleshoot and fixed problems through customer requests, and QA."
